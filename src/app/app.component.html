@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+<input #newFood type="text" placeholder="Enter a new food" value="Carrots">
+
+<h3>Observable Binding:</h3>
+<button (click)="addFood(newFood.value)">Add products</button>
+<button (click)="increasePrice()">Increase price</button>
+<app-child-observable [products]="foodEntities"></app-child-observable>
