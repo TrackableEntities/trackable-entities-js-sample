@@ -1,14 +1,14 @@
 import { async, TestBed } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
-import { ChildObservableComponent } from './child-observable/child-observable.component';
+import { ChildTrackableComponent } from './child-trackable/child-trackable.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        ChildObservableComponent
+        ChildTrackableComponent
       ],
     }).compileComponents();
   }));

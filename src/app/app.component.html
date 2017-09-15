@@ -4,9 +4,12 @@
     Welcome to {{title}}!
   </h1>
 </div>
-<input #newFood type="text" placeholder="Enter a new food" value="Carrots">
 
-<h3>Observable Binding:</h3>
-<button (click)="addFood(newFood.value)">Add products</button>
-<button (click)="increasePrice()">Increase price</button>
-<app-child-observable [products]="foodEntities"></app-child-observable>
+<h3>Trackable Entities Demo:</h3>
+<p>New Product: <input #newFood type="text" placeholder="Enter a new food" value="Carrots"></p>
+<button (click)="increasePrice()">Modify products</button>
+<button (click)="addProduct(newFood.value)">Add product</button>
+<button (click)="deleteProduct(newFood.value)">Delete product</button>
+<button (click)="toggleTracking()">Toggle tracking</button>
+Tracking: {{tracking}}
+<app-child-trackable [products]="foodEntities"></app-child-trackable>

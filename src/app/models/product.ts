@@ -1,7 +1,7 @@
-import { ObservableEntity } from 'observable-entities';
+import { TrackableEntity } from 'trackable-entities';
 import { Category } from './category';
 
-export class Product extends ObservableEntity {
+export class Product extends TrackableEntity {
   productId: number;
   productName: string;
   unitPrice: number;
