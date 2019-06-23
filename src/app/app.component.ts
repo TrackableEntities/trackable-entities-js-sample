@@ -9,7 +9,7 @@ import { TrackableSet } from 'trackable-entities';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Trackable Entities Sample';
   tracking = false;
 
   foodEntities = new TrackableSet(
